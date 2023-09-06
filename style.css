@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Merriweather:ital@1&family=Nanum+Myeongjo:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar nav li a{
+    color:black ;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Bree Serif', serif;
+    font-size: 22px;
+    cursor: pointer;  
+}
+
+.sidebar{
+    background-color: rgb(186, 179, 179); 
+  /*  width: 300px; */
+    font-family: 'Merriweather', serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+    position: absolute;
+}
+
+.sidebar nav{
+    padding: 30px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 40px 0px;    
+}
+
+.container{
+    background-color: rgb(243, 236, 235); 
+}
+
+.main{
+    background-color: rgb(243, 236, 235); 
+    width: 88vw;
+    font-family: 'Merriweather', serif;
+    height:100vh;
+    padding: 65px;
+}
+
+.container{
+    display: flex;
+}
+
+.infoContainer{
+  /*  background-color: crimson;    */
+    height: 80vh;
+    width: 80vw;
+    margin: 90px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+
+.developerInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.hello{
+    font-size: 65px;
+    font-family: 'Domine', serif;
+    font-weight: lighter;
+    cursor: no;
+    padding-bottom: 25px;
+}
+
+.name{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.about{
+    font-size: 25px;
+    font-family: 'Domine', serif;
+    font-weight: bold;   
+    padding: 14px 0px 18px 0px;
+}
+
+.intro{
+    font-size: 20px;
+    font-weight: lighter;
+    width: 650px;
+    padding-top: 10px;
+}
+
+.buttons{
+    margin-top: 35px;
+    padding: 10px;
+}
+
+.buttons button{
+    font-family: 'Domine', serif;
+    padding: 14px;
+    border-radius: 15px;
+    color: antiquewhite;
+    background-color: cadetblue;
+    font-weight: bolder;
+    font-size: 15px;
+    margin: 0 3px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    background-color: antiquewhite;
+    color: cadetblue;
+}
+
+.developerPic img{
+    height: 32vh;
+    width: 30vh;
+    border-style: solid;
+    border-width:3px;
+    border-radius: 5px;
+}
+
+@media (max-width:1061px){
+   /* .sidebar{
+        transform: translate(-450px,0px);
+        position: absolute;
+    } */
+    .developerPic{
+        display: none;
+    }
+    .intro{
+        font-size: 10px;
+    }
+}
+
+.sidebarGo{
+    transform: translate(-450px,0px);
+    position: absolute;
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.ham{
+    height:20px;
+    width:20px;
+}
+
+.cross{
+    height:20px;
+    width:20px;
+    margin-left: 100px;
+}

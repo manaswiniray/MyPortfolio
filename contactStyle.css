@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Merriweather:ital@1&family=Nanum+Myeongjo:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar nav li a{
+    color:black ;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Bree Serif', serif;
+    font-size: 22px;
+    cursor: pointer;  
+}
+
+.sidebar{
+    background-color: rgb(186, 179, 179); 
+    width: 300px;
+    font-family: 'Merriweather', serif;
+    height: 100vh;
+}
+
+.sidebar nav{
+    padding: 30px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 40px 0px;    
+}
+
+.main{
+    background-color: rgb(243, 236, 235); 
+    width: 88vw;
+    font-family: 'Merriweather', serif;
+    height:100vh
+}
+
+.container{
+    display: flex;
+}
+
+.contactForm{
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 15px;
+}
+
+.contactForm h1{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.contactForm form div{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label{
+    padding-top: 15px 0px 0px 0px;
+}
+
+.contactForm form div input{
+    width: 26vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+.mb-3{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#form-check{
+    flex-direction: row;
+    padding-bottom: 15px;
+}
+
+#form-check input{
+    width: 40px;
+    margin: 5px 0;
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+.form-text{
+    font-size: 10px;
+    color: blue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contactForm form button{
+    font-family: 'Domine', serif;
+    padding: 10px;
+    border-radius: 15px;
+    color: antiquewhite;
+    background-color: cadetblue;
+    font-weight: bolder;
+    font-size: 15px;
+    margin: 0 3px;
+    border-style: solid;
+    cursor: pointer;
+    width:90px;
+}
+
+.submitButton{
+    padding-top: 35px;
+}
