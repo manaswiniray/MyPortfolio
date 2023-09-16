@@ -13,3 +13,5 @@ document.querySelector('.hamburger').addEventListener("click", () => {
         },300)  
     }   
 })
+
+/*nkdma*/
