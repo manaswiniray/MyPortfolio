@@ -23,6 +23,8 @@
     height: 100vh;
     transition: transform 0.3s ease-in;
     position: absolute;
+ /*   width: 100%;
+    transform: translateX(-100%); */
 }
 
 .sidebar nav{
@@ -33,11 +35,7 @@
     list-style: none;
     font-size: 20px;
     padding: 40px 0px;    
-}
-
-.container{
-    background-color: rgb(243, 236, 235); 
-}
+}    
 
 .main{
     background-color: rgb(243, 236, 235); 
@@ -48,7 +46,9 @@
 }
 
 .container{
+    background-color: rgb(243, 236, 235); 
     display: flex;
+   /* flex-direction: column; */
 }
 
 .infoContainer{
@@ -154,10 +154,96 @@
 .ham{
     height:20px;
     width:20px;
+    margin-left: 10px;
 }
 
 .cross{
     height:20px;
     width:20px;
-    margin-left: 100px;
+    margin-left: 140px;
+}
+
+/* Mobile Styles (up to 320px, iPhone SE) */
+@media (max-width: 375px) {
+    .container {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 10px; /* Add padding to the container for spacing */
+    }
+
+    .sidebar {
+        width: 100%; /* Full width on mobile */
+        transform: translateX(-100%); /* Hide by default on mobile */
+    }
+
+    .sidebar nav li a {
+        font-size: 16px; /* Adjust font size for mobile */
+        padding: 8px 0; /* Add spacing to the navigation links */
+    }
+
+    .developerPic img {
+        width: 100%; /* Make the image width 100% for mobile */
+        height: auto; /* Allow the image to scale proportionally */
+    }
+
+    .intro {
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+
+    .buttons button {
+        padding: 8px; /* Reduce button padding for mobile */
+        font-size: 12px; /* Adjust button font size for mobile */
+    }
+
+    .infoContainer {
+        margin: 10px auto; /* Adjust margin for the info container on mobile */
+        width: 90%; /* Reduce the width to fit within the screen */
+    }
+
+    /* Oppo F17 (up to 1080px) or similar devices */
+@media (max-width: 1080px) {
+    .container {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 10px; /* Add padding to the container for spacing */
+    }
+
+    .sidebar {
+        width: 100%; /* Full width on mobile */
+        transform: translateX(-100%); /* Hide by default on mobile */
+    }
+
+    .sidebar nav li a {
+        font-size: 16px; /* Adjust font size for mobile */
+        padding: 8px 0; /* Add spacing to the navigation links */
+    }
+
+    .developerPic img {
+        width: 100%; /* Make the image width 100% for mobile */
+        height: auto; /* Allow the image to scale proportionally */
+    }
+
+    .intro {
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+
+    .buttons button {
+        padding: 8px; /* Reduce button padding for mobile */
+        font-size: 12px; /* Adjust button font size for mobile */
+    }
+
+    .infoContainer {
+        margin: 10px auto; /* Adjust margin for the info container on mobile */
+        width: 90%; /* Reduce the width to fit within the screen */
+    }
+    
+    .developerInfo {
+        width: 100%; /* Make sure the developer info takes full width */
+        text-align: center; /* Center the text within the info container */
+    }
+}
+
+    
+    .developerInfo {
+        width: 100%; /* Make sure the developer info takes full width */
+        text-align: center; /* Center the text within the info container */
+    }
 }
