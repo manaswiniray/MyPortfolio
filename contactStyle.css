@@ -5,6 +5,7 @@
 *{
     margin: 0;
     padding: 0;
+    background-color: rgb(243, 236, 235); 
 }
 
 .sidebar nav li a{
@@ -115,3 +116,58 @@
 .submitButton{
     padding-top: 35px;
 }
+
+.sidebarGo{
+    transform: translate(-450px,0px);
+    position: absolute;
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.ham{
+    height:20px;
+    width:20px;
+    margin-left: 10px;
+}
+
+.cross{
+    height:20px;
+    width:20px;
+    margin-left: 190px;
+}
+
+.sidebar nav li a{
+    color:black ;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Bree Serif', serif;
+    font-size: 22px;
+    cursor: pointer;  
+}
+
+.sidebar{
+    background-color: rgb(186, 179, 179); 
+  /*  width: 300px; */
+    font-family: 'Merriweather', serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+    position: absolute;
+    width: 250px;
+ /*   width: 100%;
+    transform: translateX(-100%); */
+}
+
+.sidebar nav{
+    padding: 30px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 40px 0px;    
+}    
