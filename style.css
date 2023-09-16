@@ -23,6 +23,7 @@
     height: 100vh;
     transition: transform 0.3s ease-in;
     position: absolute;
+    width: 250px;
  /*   width: 100%;
     transform: translateX(-100%); */
 }
@@ -59,6 +60,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap:wrap;
+    padding-left: 150px;
 }
 
 .developerInfo{
@@ -160,7 +162,7 @@
 .cross{
     height:20px;
     width:20px;
-    margin-left: 140px;
+    margin-left: 190px;
 }
 
 
